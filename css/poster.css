@@ -12,6 +12,50 @@ html {
     color: #151515;
 }
 
+.modal {
+    display: none;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.356);
+    z-index: 2;
+    top: 0;
+    left: 0;
+    text-align: center;
+    color: #fff;
+}
+
+.modal-content {
+    background-color: rgb(82, 96, 116);
+    margin: 5% auto;
+    padding: 5rem;
+    width: 600px;
+    height: 600px;
+    animation: zoom-in 1s;
+}
+
+@keyframes zoom-in {
+    0% {transform: scale(0);}
+    100% {transform: scale(1);}
+}
+
+.closeBtn {
+    float: right;
+    cursor: pointer;
+    font-size: 2rem;
+    color: #fff;
+}
+
+.movie-poster-modal {
+    width: 300px;
+    border-radius: 13px;
+}
+
+.movie-poster {
+    width: 300px;
+    cursor: pointer;
+}
+
 .movie-card {
     margin-top: 5rem;
     height: 800px;
@@ -46,9 +90,7 @@ html {
     100% {left: 0;}
 }
 
-.movie-poster {
-    cursor: pointer;
-}
+
 
 .movie-poster:hover {
     transform: scale(1.1);
